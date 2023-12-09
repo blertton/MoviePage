@@ -1,7 +1,7 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 export default function FullWidthTextField() {
   return (
@@ -15,12 +15,16 @@ export default function FullWidthTextField() {
         transform: "translate(-50%, -50%)",
       }}
     >
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: "flex" }}>
         <TextField
           fullWidth
           label="Search Movies or Series Names"
           id="fullWidth"
-          sx={{ borderTopRightRadius: 0, borderBottomRightRadius: 0,borderColor: "linear-gradient(to right, 	#007c7c, #000000)" }}
+          sx={{
+            borderTopRightRadius: 0,
+            borderBottomRightRadius: 0,
+            borderColor: "linear-gradient(to right, 	#007c7c, #000000)",
+          }}
         />
         <Button
           variant="contained"
@@ -29,7 +33,7 @@ export default function FullWidthTextField() {
             height: 55,
             borderTopLeftRadius: 0,
             borderBottomLeftRadius: 0,
-            background: "#007c7c"
+            background: "#007c7c",
           }}
         >
           Search

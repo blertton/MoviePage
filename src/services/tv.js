@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiKey = "0c417a58c1c75346941b8d1157cb6c11";
-const baseUrl = "https://api.themoviedb.org/3/discover/movie";
+const baseUrl = "https://api.themoviedb.org/3/discover/tv";
 
 const axiosInstance = axios.create({
   baseURL: baseUrl,
@@ -10,14 +10,14 @@ const axiosInstance = axios.create({
   },
 });
 
-async function fetchMovies() {
+async function fetchTv() {
   try {
     const response = await axiosInstance.get("");
-    return response.data.results.map((movie) => ({
-      posterPath: movie.poster_path,
-      overview: movie.overview,
-      originalTitle: movie.original_title,
-      releaseDate: movie.release_date,
+    return response.data.results.map((tv) => ({
+      posterPath: tv.poster_path,
+      overview: tv.overview,
+      name: tv.name,
+      releaseDate: tv.release_date,
     }));
   } catch (error) {
     console.error("Error:", error);
@@ -25,4 +25,4 @@ async function fetchMovies() {
   }
 }
 
-export { fetchMovies };
+export { fetchTv };

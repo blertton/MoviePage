@@ -91,7 +91,7 @@ function ResponsiveAppBar() {
               </MenuItem>
               <MenuItem
                 component={RouterLink}
-                to="/"
+                to="/tv-show"
                 onClick={handleCloseNavMenu}
               >
                 <Typography textAlign="center">TV-Shows</Typography>
@@ -135,7 +135,7 @@ function ResponsiveAppBar() {
             </Button>
             <Button
               component={RouterLink}
-              to="/"
+              to="/tv-show"
               onClick={handleCloseNavMenu}
               sx={{ my: 2, mx: 6, color: "white", display: "block" }}
             >
