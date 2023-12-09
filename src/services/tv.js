@@ -14,6 +14,7 @@ async function fetchTv() {
   try {
     const response = await axiosInstance.get("");
     return response.data.results.map((tv) => ({
+      id: tv.id,
       posterPath: tv.poster_path,
       overview: tv.overview,
       name: tv.name,

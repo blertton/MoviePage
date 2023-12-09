@@ -5,10 +5,14 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
+import { Link as RouterLink } from "react-router-dom";
+
 export default function ActionAreaCard({ movie }) {
   return (
     <>
       <Card
+        component={RouterLink}
+        to={`/movie-details/${movie.id}`}
         sx={{
           width: 240,
           height: 400,

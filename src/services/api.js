@@ -14,6 +14,7 @@ async function fetchMovies() {
   try {
     const response = await axiosInstance.get("");
     return response.data.results.map((movie) => ({
+      id: movie.id,
       posterPath: movie.poster_path,
       overview: movie.overview,
       originalTitle: movie.original_title,
