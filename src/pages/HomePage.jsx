@@ -13,6 +13,7 @@ export default function FullWidthTextField() {
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
+        backgroundColor: "grey",
       }}
     >
       <div style={{ display: "flex" }}>
@@ -20,10 +21,16 @@ export default function FullWidthTextField() {
           fullWidth
           label="Search Movies or Series Names"
           id="fullWidth"
+          InputProps={{
+            style: { color: "your-desired-color" },
+          }}
+          InputLabelProps={{
+            style: { color: "white" },
+          }}
           sx={{
             borderTopRightRadius: 0,
             borderBottomRightRadius: 0,
-            borderColor: "linear-gradient(to right, 	#007c7c, #000000)",
+            borderColor: "white",
           }}
         />
         <Button

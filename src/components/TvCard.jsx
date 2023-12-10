@@ -14,6 +14,7 @@ export default function ActionAreaCard({ tv }) {
         component={RouterLink}
         to={`/tv-details/${tv.id}`}
         sx={{
+          background: "#70b8b8",
           width: 240,
           height: 400,
           display: "inline-flex",

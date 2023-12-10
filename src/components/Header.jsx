@@ -53,7 +53,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              sx={{ color: "#777" }}
+              sx={{ color: "white" }}
             >
               <MenuIcon />
             </IconButton>

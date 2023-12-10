@@ -35,6 +35,7 @@ function Details() {
               fontSize: "30px",
               fontWeight: "bold",
               marginBottom: "8px",
+              color:'white'
             }}
           >
             {mDetails.originalTitle}
@@ -45,6 +46,7 @@ function Details() {
               marginBottom: "16px",
               marginRight: "300px",
               marginLeft: "300px",
+              color:'white'
             }}
           >
             {mDetails.overview}
