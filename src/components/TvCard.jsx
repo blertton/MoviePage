@@ -19,6 +19,7 @@ export default function ActionAreaCard({ tv }) {
           display: "inline-flex",
           mt: 10,
           mx: 8,
+          borderRadius: 3
         }}
       >
         <CardActionArea>

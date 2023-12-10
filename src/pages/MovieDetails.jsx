@@ -43,8 +43,8 @@ function Details() {
             style={{
               fontSize: "16px",
               marginBottom: "16px",
-              marginRight: "280px",
-              marginLeft: "280px",
+              marginRight: "300px",
+              marginLeft: "300px",
             }}
           >
             {mDetails.overview}
