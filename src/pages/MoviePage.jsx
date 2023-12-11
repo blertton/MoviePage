@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
 import { fetchMovies } from "../services/api.js";
 
-function MoviePage() {
+function MoviePage({maxMovies}) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -14,10 +14,12 @@ function MoviePage() {
     fetchAndSetMovies();
   }, []);
 
+  const displayedMovies = movies.slice(0, maxMovies);
+  
   return (
     <div>
       <div>
-        {movies.map((movie, index) => (
+        {displayedMovies.map((movie, index) => (
           <MovieCard key={index} movie={movie} />
         ))}
       </div>
