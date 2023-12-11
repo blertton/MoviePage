@@ -57,6 +57,7 @@ function Details() {
                   width: "300px",
                   marginBottom: "10px",
                   marginTop: "100px",
+                  borderRadius: "10px",
                 }}
               />
               <h2
@@ -64,7 +65,7 @@ function Details() {
                   fontSize: "30px",
                   fontWeight: "bold",
                   marginBottom: "8px",
-                  color:'white'
+                  color: "white",
                 }}
               >
                 {showDetail.name}
@@ -75,7 +76,7 @@ function Details() {
                   marginBottom: "16px",
                   marginRight: "300px",
                   marginLeft: "300px",
-                  color:'white'
+                  color: "white",
                 }}
               >
                 {showDetail.overview}

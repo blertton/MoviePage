@@ -1,4 +1,3 @@
-// Details.jsx
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { singleMovie } from "../services/singleMovie";
@@ -28,14 +27,19 @@ function Details() {
           <img
             src={`https://image.tmdb.org/t/p/w500/${mDetails.posterPath}`}
             alt={mDetails.originalTitle}
-            style={{ width: "300px", marginBottom: "10px", marginTop: "100px" }}
+            style={{
+              width: "300px",
+              marginBottom: "10px",
+              marginTop: "100px",
+              borderRadius: "10px",
+            }}
           />
           <h2
             style={{
               fontSize: "30px",
               fontWeight: "bold",
               marginBottom: "8px",
-              color:'white'
+              color: "white",
             }}
           >
             {mDetails.originalTitle}
@@ -46,7 +50,7 @@ function Details() {
               marginBottom: "16px",
               marginRight: "300px",
               marginLeft: "300px",
-              color:'white'
+              color: "white",
             }}
           >
             {mDetails.overview}

@@ -25,7 +25,10 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position="fixed"
-      sx={{ background: "linear-gradient(to right, 	#007c7c, #000000)" }}
+      sx={{
+        background: "linear-gradient(to right, 	#007c7c, #000000)",
+        boxShadow: "0 3px 7px rgba(255, 255, 255, 0.5)",
+      }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -121,7 +124,7 @@ function ResponsiveAppBar() {
               component={RouterLink}
               to="/"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, mx: 6, color: "white", display: "block" }}
+              sx={{ my: 2, mx: 6, color: "#a9c9c9", display: "block" }}
             >
               Home
             </Button>
@@ -129,7 +132,7 @@ function ResponsiveAppBar() {
               component={RouterLink}
               to="/movies"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, mx: 6, color: "white", display: "block" }}
+              sx={{ my: 2, mx: 6, color: "#a9c9c9", display: "block" }}
             >
               Movies
             </Button>
@@ -137,7 +140,7 @@ function ResponsiveAppBar() {
               component={RouterLink}
               to="/tv-show"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, mx: 6, color: "white", display: "block" }}
+              sx={{ my: 2, mx: 6, color: "#a9c9c9", display: "block" }}
             >
               TV-Shows
             </Button>

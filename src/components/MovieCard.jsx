@@ -13,15 +13,15 @@ export default function ActionAreaCard({ movie }) {
         component={RouterLink}
         to={`/movie-details/${movie.id}`}
         sx={{
-          background: "#70b8b8",
+          background: "#a9c9c9",
           width: 240,
           height: 400,
           display: "inline-flex",
           mt: 10,
           mx: 8,
           borderRadius: 3,
+          boxShadow: "0 3px 6px rgba(255, 255, 255, 0.5)",
         }}
-        
       >
         <CardActionArea>
           <CardMedia
@@ -34,7 +34,7 @@ export default function ActionAreaCard({ movie }) {
           <CardContent>
             <Typography
               gutterBottom
-              fontSize="14px"
+              fontSize="15px"
               fontWeight="bold"
               component="div"
               textAlign="left"
